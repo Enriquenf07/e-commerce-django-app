@@ -1,4 +1,4 @@
-<h1>Django e-commerce App</h1>
+<h1 align="center">Django e-commerce App</h1>
 <h2>Aplicativo web feito em django.</h2>
 <h2>Funcionalidades</h2>
 <p>Usuario pode ver os produtos em catalogo</p>
