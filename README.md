@@ -10,12 +10,12 @@
 <img src="imagens-github/modelagem.png">
 
 <h2>Galeria de imagens</h2>
-<img src="imagens-github/home">
-<img src="imagens-github/produtos">
-<img src="imagens-github/produto">
-<img src="imagens-github/carrinho">
-<img src="imagens-github/login">
-<img src="imagens-github/pedido">
+<img src="imagens-github/home.png">
+<img src="imagens-github/produtos.png">
+<img src="imagens-github/produto.png">
+<img src="imagens-github/carrinho.png">
+<img src="imagens-github/login.png">
+<img src="imagens-github/pedido.png">
 
 <h2>Como instalar o app na sua maquina</h2>
 <p>Primeiro crie uma nova pasta e um novo ambiente virtual com o venv</p>

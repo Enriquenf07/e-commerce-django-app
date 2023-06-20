@@ -32,7 +32,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'home',
-    'posts',
     'produtos',
     'autenticacao',
     'modelos',
