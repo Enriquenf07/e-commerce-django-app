@@ -1,9 +1,9 @@
 <h1 align="center">Django e-commerce App</h1>
-<h2>Aplicativo web feito em django.</h2>
+<p>Aplicativo web feito em django.</p>
 <h2>Funcionalidades</h2>
 <p>O usuario pode ver os produtos em catalogo,</p>
 <p>fazer a autenticação, login, cadastro e logout,</p>
-<p>adicionar e deletar itens ao seu carrinho,</p>
+<p>adicionar e deletar itens do seu carrinho,</p>
 <p>efetuar o pedido</p>
 <h2>Banco de dados</h2>
 <p>Foi realizado a modelagem do banco de dados e a sua implementação</p>
