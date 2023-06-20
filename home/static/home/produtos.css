@@ -1,0 +1,26 @@
+.container-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo{
+    width: 1250px;
+    display: flex;
+    justify-content: start;
+}
+
+.produto img{
+    height: 30vmin;
+    width: 32vmin;
+    
+}
+
+.produtos{
+    flex-wrap: wrap;   
+}
+
+.produtos{
+    width: 50vw;
+}

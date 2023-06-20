@@ -5,19 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="{% static 'autenticao/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'autenticacao/styles.css' %}">
 </head>
 <body>
     <div class="content">
-        <div class="">
-            <h1>Cadastro</h1>
-            <form method="POST">
-                {% csrf_token %}
-                {{ register_form}}                    
-                <button class="btn" type="submit">Register</button>
-            </form>
-            <p class="text">If you already have an account, <a href="{% url 'login' %}">login</a> instead.</p>
-        </div>
+        <h1>Cadastro</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ register_form}}                    
+            <button class="btn" type="submit">Cadastrar</button>
+        </form>
+        <p class="text">Se já possui uma conta <a href="{% url 'login' %}">acesse aqui.</a></p>
     </div>
 </body>
 </html>

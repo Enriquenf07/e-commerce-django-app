@@ -1,45 +1,20 @@
+{% extends 'base.html' %}
 {% load static %}
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> {{nome}} </title>
-    <link rel="stylesheet" href="{% static 'produtos/styles.css' %}">
-</head>
-<body>
-    <nav>
-        <div>
-          <div id="nav-header">
-            <h1>DUAS IRMÃS</h1>
-            {% if user.is_authenticated %}
-            <div id="user-menu">
-              <p><a href="#">Conta</a></p>
-              <p><a href="#">Carrinho</a></p>
-              <p><a href="#">Logout</a></p>
-            </div>
-            {% else %}
-            <div id="login-btn">
-              <p><a href="{% url 'login' %}">Login</a></p>
-            </div>   
-            {% endif %}
-          </div>
-        </div>
-          <div id="nav-list">
-              <a href="" class="nav-items">PRODUTOS</a>
-              <a href="" class="nav-items">QUEM SOMOS?</a>
-              <a href="" class="nav-items">CONTATO</a>
-          </div>
-    </nav>
+{% block links %}
+  <link rel="stylesheet" href="{% static 'produtos/styles.css' %}">
+{% endblock  %}
+{% block content %}
+<section>
+  <div>
     <img src="{{object.imagem.url}}" alt="">
-    <h1> {{object.nome}} </h1>
-    <h2> R$ {{object.preco}} </h2>
-    <p> {{object.descricao}} </p>
-    <form method="POST">
+    <div class="produto-info">
+      <h1> {{object.nome}} </h1>
+      <h2> POR: R$ {{object.preco}} </h2>
+      <p> {{object.descricao}} </p>
+      <form method="POST">
       {% csrf_token %}
       <button class="btn" type="submit">COMPRAR</button>
-    <footer>
-        <h1>DUAS IRMÃS</h1>
-    </footer>
-</body>
-</html>
+    </div>
+  </div>
+</section>
+{% endblock  %}

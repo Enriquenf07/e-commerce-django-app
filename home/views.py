@@ -13,4 +13,13 @@ class HomeView(TemplateView):
         produtos = Produto.objects.all()
         context["produtos"] = produtos
         return context
+    
+class ProdutosView(TemplateView):
+    template_name = 'home/produtos.html'
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        produtos = Produto.objects.all()
+        context["produtos"] = produtos
+        return context
         

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block links %}
+<link rel="stylesheet" href="{% static 'home/styles.css' %}">
+<link rel="stylesheet" href="{% static 'home/produtos.css' %}">
+{% endblock links %}
+{% block content %}
+<div class="container-principal">
+    <div class="titulo">
+        <h1>Produtos</h1>
+    </div>
+    <div class="produtos">
+        {% for produto in produtos%}
+            <div class="produto">
+                <a href="produtos/{{produto.id}}"><img src="{{produto.imagem.url}}" alt=""></a>
+                <p>{{produto.nome|title}}</p>
+                <p>R${{produto.preco}}</p>
+            </div>
+        {% endfor %}
+        {% for produto in produtos%}
+            <div class="produto">
+                <a href="produtos/{{produto.id}}"><img src="{{produto.imagem.url}}" alt=""></a>
+                <p>{{produto.nome|title}}</p>
+                <p>R${{produto.preco}}</p>
+            </div>
+        {% endfor %}
+        {% for produto in produtos%}
+            <div class="produto">
+                <a href="produtos/{{produto.id}}"><img src="{{produto.imagem.url}}" alt=""></a>
+                <p>{{produto.nome|title}}</p>
+                <p>R${{produto.preco}}</p>
+            </div>
+        {% endfor %}
+        {% for produto in produtos%}
+            <div class="produto">
+                <a href="produtos/{{produto.id}}"><img src="{{produto.imagem.url}}" alt=""></a>
+                <p>{{produto.nome|title}}</p>
+                <p>R${{produto.preco}}</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+<script src="{% static 'home/script.js' %}"></script>
+{% endblock  %}

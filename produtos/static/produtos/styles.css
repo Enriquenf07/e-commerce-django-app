@@ -1,97 +1,32 @@
-@import url('httpsL//fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
-
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
-body{
-    padding: 0;
-    margin: 0;
-    background-color: ghostwhite;
-}
-
-nav h1, footer h1{
-    font-family: 'Playfair Display', serif;
-    font-size: 50px;
-}
-
-nav div:first-child{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-
-
-#nav-header{
-    display: grid;
-    width: 63vw;
-    height: 100px;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    'logo login';
-}
-
-#nav-header h1:first-child{
-    grid-area: logo;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin: 0;
-    padding-right: 40px;
-}
-
-#login-btn{
-    grid-area: login;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding-top: 20px;
-}
-
-#login-btn a{
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-}
-
-#nav-list{
+section{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 50px;
-    background-color: #dfdfff;
+    height: 80vh;
 }
 
-.nav-items{
-    padding-left: 2.5rem;
-    text-decoration: none;
-    color: #212529;
-    font-size: 1rem;
-}
-
-
-.container-principal, nav, footer{
+section div{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    width: 60vw;
+}
+
+section img{
+    height: 70vmin;
+    width: 55vmin;
+}
+
+.produto-info{
+    display: flex;
+    padding-left: 30px;
     flex-direction: column;
-    gap: 1rem;
 }
 
-
-
-
-footer{
+.btn{
+    width: 300px;
+    height: 65px;
+    border: none;
     background-color: black;
-    margin-top: 200px;
-    height: 150px;
-}
-
-footer h1{
     color: white;
+    font-size: 30px;
 }

@@ -1,0 +1,40 @@
+{% load static %}
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block titulo %}{% endblock  %}</title>
+  <link rel="stylesheet" href="{% static 'styles_body.css' %}">
+  {% block links %}{% endblock  %}
+</head>
+<body>
+  <nav>
+    <div>
+      <div id="nav-header">
+        <a href="{% url 'home' %}"><h1>DUAS IRMÃS</h1></a>
+        {% if user.is_authenticated %}
+        <div id="user-menu">
+          <p><a href="#">Conta</a></p>
+          <p><a href="/carrinho">Carrinho</a></p>
+          <p><a href="{%url 'logout' %}">Logout</a></p>
+        </div>
+        {% else %}
+        <div id="login-btn">
+          <p><a href="{% url 'login' %}">Login</a></p>
+        </div>   
+        {% endif %}
+      </div>
+    </div>
+      <div id="nav-list">
+          <a href="{% url 'produtos' %}" class="nav-items">PRODUTOS</a>
+      </div>
+  </nav>
+  {% block content %}
+  {% endblock  %}
+  <footer>
+    <h1>DUAS IRMÃS</h1>
+  </footer>
+</body>
+</html>
+
+
